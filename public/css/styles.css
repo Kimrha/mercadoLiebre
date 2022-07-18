@@ -1,0 +1,243 @@
+header { /*parte de arriba de la pagina*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+}
+
+.cabecera{ /*cabecera de la pagina*/
+    background-color: #EAC926;
+}
+
+
+img { /*imagenes*/
+    max-width: 100%;
+}
+
+#logo { /*logo*/
+    max-width: 25%;
+    display: left;
+    margin: 0px auto;
+}
+
+
+#barra-busqueda {  /*fondo de la lupa color blanco*/
+    background-color: white;
+    display: flex;
+    border:none;
+    width: 30vw;
+    height: 5vh;
+    border-radius: 8px;
+}
+
+#barra-busqueda input{ /* boton de la barra, parte de adentro*/
+    border:none;
+    width: 30vw;
+    height: 5vh;
+    border-radius: 8px;
+}
+
+#barra-busqueda button{ /*la lupa de la barra de busqueda*/
+    border:none;
+    background-color:white;
+    border-radius: 8px;
+    width: 30px;
+}
+
+nav.links a{ /*links de la pagina en el header*/
+    color:black;
+    text-decoration: none;
+    text-align: left;
+}
+
+.links-1{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links-2{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.propaganda { /*publicidad que se encuentra entre el header y el main*/
+    max-width: 100%;
+    width: 100%;
+}
+
+.burger-menu { /*menu hamburguesa*/
+    text-align: center; /*centrar el icono en el padding//recuadro*/
+    font-size: 20px;    /*tamaño del icono*/
+    padding: 5px;   /*tamaño del recuerdo que esta fuera del icono*/
+    color: white;  /* color del icono*/
+    background-color: #03264C; /* color del fondo*/
+    width: 30px;  /*el tamaño del ancho del fondo//width es ancho en ingles*/
+    margin: auto;  /*Para colocar el objeto en el centro de la pagina*/
+    border-radius: 5px; /*genera el circulo del borde*/
+}
+
+
+article { /*articulos de productos*/
+    /*margin-bottom: 10px; /*para separarlo de los demas articulos*/
+    /*font-size: 1.5rem;*/
+    font-size: 12px;  /*tamaño de la topografia*/
+    margin: 0.6rem;  /* espacio entre articulos*/
+    padding: 10px; /*tamaño del recuerdo que esta fuera del texto*/
+    width: 13vw;   /*el tamaño del ancho del fondo//width es ancho en ingles*/
+    background-color: white;  /* color del fondo*/
+    border: 15px 15px 15px 15px;  
+    margin-left:auto;
+    margin-right:auto;
+    width:max-content;
+    max-width: 60vw;
+}
+
+.elementoCaja{
+    display: block;
+    border-top: solid 1px #ebebeb;
+    padding:0.938rem; 
+    width:max-content;
+    max-width: 60vw;
+    max-height: 60vh;
+    width: 28vw;
+}
+
+.imagen-producto {/*imagenes de los productos*/
+    display: block;
+    padding:0.938rem; 
+    width:max-content;
+    max-width: 60vw;
+    max-height: 60vh;
+    width: 28vw;
+    border-bottom: solid 1px #ebebeb;  
+}
+
+.envio i{ /*camionsito feo feisimo*/
+    display: inline;
+    font-size: 0.8rem;    /*tamaño del icono*/
+    padding: 8px;   /*tamaño del recuerdo que esta fuera del icono*/
+    width: 12px;  /*el tamaño del ancho del fondo//width es ancho en ingles*/
+    border-radius: 13px; /*genera el circulo del borde*/
+    border-color: #39b54a;  /*color del borde*/
+    border-style: solid;    /*tipo de linea del borde*/
+    border-width: 1px;      /*ancho del borde*/
+    color:#39b54a;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    
+}
+
+.mover-camion {
+    display:flex;
+    justify-content: flex-end;
+}
+
+.cuerpos-de-texto {/*footer/texto pie de pagina*/
+    font-size: 12px;
+}
+.titulares {/*del pie de pagina y entre productos*/
+    font-size: 24px;
+}
+.precios {/*precios de productos*/
+    font-size: 18px;
+}
+
+.descuentos {/*off*/
+    font-size: 16px;
+    color:#39b54a;
+}
+
+.descripciones {/*descripcion de productos*/
+    font-size: 16px;
+    color:#666;
+}
+
+.articulo-footer {/*texto del pie de pagina*/
+    text-align: center;
+}
+
+.txt-footer {/*texto del final de la pagina.*/
+    display: block;
+    margin:auto;
+    width: 20rem;
+    height: 5rem;
+}
+
+.footer-icon {/*los iconos del final de la pagina*/
+    color:#03264C;
+    font-size: 2em;
+    margin-bottom: 10px;
+    max-width: 100%;
+    width: 100%;
+}
+
+*{/*todos los productos*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.prod-1 {
+    padding:0.938rem;
+}
+
+@media screen and (max-width: 780px) and (min-width: 460px) {
+    /* Tablets */
+    .descripciones /*esconde las descripsiones de los articulos*/{
+        display:none;
+    }
+    nav /*esconde las barras de navegacion*/ {
+        display: none;
+    }
+
+    #titulo {
+        margin: center;
+    }
+
+    /**/
+}
+
+@media screen and (min-width: 780px){
+/* Laptop */
+    .burger-menu /*sacamos el manu*/{
+        display: none;
+    }
+
+    .barraBusqueda {
+        display: inline;
+        position: relative;
+        bottom: 5vh;
+        left: 5vw;
+    }
+    
+    .links {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lupa {
+        display: inline;
+        position: relative;
+        bottom: 7.5vh;
+        left: 39vw;
+    }
+
+    #titulo { /*titulo compra en cuotas y sin tarjeta de credito*/
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 68px;
+    }    
+
+
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+
