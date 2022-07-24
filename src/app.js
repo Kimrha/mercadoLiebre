@@ -1,7 +1,7 @@
 const { response } = require('express');
 const express = require('express');
 const server = express(); 
-const port = 2020;
+const port = process.env.PORT || 2020;
 const start = () => console.log('Starting server... in http://localhost:2020');
 server.listen(port, start());
 
