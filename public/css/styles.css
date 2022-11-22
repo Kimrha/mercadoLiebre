@@ -76,39 +76,31 @@ nav.links a{ /*links de la pagina en el header*/
     border-radius: 5px; /*genera el circulo del borde*/
 }
 
+.listado-productos { /*articulos de productos*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 article { /*articulos de productos*/
     /*margin-bottom: 10px; /*para separarlo de los demas articulos*/
     /*font-size: 1.5rem;*/
     font-size: 12px;  /*tamaño de la topografia*/
-    margin: 0.6rem;  /* espacio entre articulos*/
     padding: 10px; /*tamaño del recuerdo que esta fuera del texto*/
-    width: 13vw;   /*el tamaño del ancho del fondo//width es ancho en ingles*/
     background-color: white;  /* color del fondo*/
-    border: 15px 15px 15px 15px;  
-    margin-left:auto;
-    margin-right:auto;
-    width:max-content;
-    max-width: 60vw;
+    border: 15px 15px 15px 15px;
 }
 
 .elementoCaja{
     display: block;
     border-top: solid 1px #ebebeb;
-    padding:0.938rem; 
-    width:max-content;
-    max-width: 60vw;
-    max-height: 60vh;
-    width: 28vw;
+    padding:0.938rem;
 }
 
 .imagen-producto {/*imagenes de los productos*/
     display: block;
     padding:0.938rem; 
     width:max-content;
-    max-width: 60vw;
-    max-height: 60vh;
-    width: 28vw;
     border-bottom: solid 1px #ebebeb;  
 }
 
@@ -128,7 +120,8 @@ article { /*articulos de productos*/
     display: flex;
     flex-direction: row;
     align-content: flex-start;
-    
+    width:80vw;
+    margin: 10px
 }
 
 .mover-camion {
@@ -198,6 +191,10 @@ article { /*articulos de productos*/
         margin: center;
     }
 
+    .contenedor {
+        width:45vw
+    }
+
     /**/
 }
 
@@ -234,6 +231,9 @@ article { /*articulos de productos*/
         bottom: 68px;
     }    
 
+    .contenedor {
+        width:20vw
+    }
 
     article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
