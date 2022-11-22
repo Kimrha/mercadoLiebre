@@ -10,7 +10,7 @@ const path = require('path');
 //Decirle al proyecto donde está la carpeta public
 server.use(express.static(path.resolve(__dirname, "../public")));
 
-server.get('/home', function(request, response) {
+server.get('', function(request, response) {
     let file = path.join(__dirname, '../views/home.html');
     return response.sendFile(file);
 })
